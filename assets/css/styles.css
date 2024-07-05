@@ -9,7 +9,7 @@ body {
     font-family: "Sora", sans-serif;
 }
 :root {
-    --header-bg: #10375C;
+    --header-bg: #10375c;
 }
 /* Common */
 a {
@@ -19,7 +19,6 @@ a {
     margin: 0 auto;
     width: 1170px;
     max-width: calc(100% - 48px);
-    
 }
 .btn {
     display: inline-block;
@@ -31,13 +30,27 @@ a {
     line-height: var(--height);
     font-size: 1.6rem;
     font-weight: 400;
-    color: #FFF;
+    color: #fff;
     padding: 0 20px;
-    background: #2E80CE;
+    background: #2e80ce;
 }
 .btn:hover {
     opacity: 0.9;
     cursor: pointer;
+}
+.section-heading {
+    color: #10375c;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.section-desc {
+    margin-top: 18px;
+    color: #575f66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67;
+    width: 468px;
 }
 /* Header */
 .header {
@@ -65,7 +78,7 @@ a {
 .logo__circle::before {
     width: 3em;
     height: 3em;
-    background-color: #2E80CE;
+    background-color: #2e80ce;
 }
 .logo__circle::after {
     width: 1.6em;
@@ -82,7 +95,7 @@ a {
 }
 .logo__brand {
     display: block;
-    color: #FFF;
+    color: #fff;
     font-size: 1.8em;
     font-weight: 400;
 }
@@ -95,7 +108,7 @@ a {
 }
 .header__action--login,
 .navbar__link {
-    color: #C9D2DA;
+    color: #c9d2da;
     padding: 4px 21px;
     font-size: 1.6rem;
     font-weight: 300;
@@ -103,7 +116,7 @@ a {
 }
 .navbar__link:hover,
 .navbar__link--active {
-    color: #FFF;
+    color: #fff;
     text-shadow: 1px 0 0 currentColor;
 }
 .navbar__link--active::before {
@@ -115,7 +128,7 @@ a {
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: #FFF
+    background: #fff;
 }
 .header__action--signup {
     --height: 40px;
@@ -125,13 +138,13 @@ a {
 .hero {
     margin-top: 84px;
     display: flex;
-    align-items: center ;
+    align-items: center;
 }
-.hero-content {
+.hero__content {
     width: 44%;
 }
 .hero__heading {
-    color: #FFF;
+    color: #fff;
     font-size: 7rem;
     font-weight: 600;
     line-height: 1.14;
@@ -139,22 +152,22 @@ a {
 }
 .hero__desc {
     margin-top: 22px;
-    color: #C9D2DA;
+    color: #c9d2da;
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 1.7;
 }
-.hero-row {
+.hero__row {
     margin-top: 38px;
 }
 .hero__phone {
     margin-left: 38px;
-    color: #FFF;
+    color: #fff;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.7;
 }
-.hero-media {
+.hero__media {
     flex-grow: 1;
 }
 .hero__images {
@@ -162,7 +175,7 @@ a {
     align-items: center;
     justify-content: flex-end;
 }
-.hero__img{
+.hero__img {
     width: 330px;
     height: 540px;
     border-radius: 6px;
@@ -175,4 +188,74 @@ a {
 .hero__img:last-child {
     width: 210px;
     height: 410px;
+}
+/* Services */
+.services {
+    padding: 170px 0;
+}
+.services__heading,
+.services__desc {
+    text-align: center;
+}
+.services__desc {
+    margin-left: auto;
+    margin-right: auto;
+}
+.services__row {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.services__img {
+    width: 570px;
+    height: 570px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.services__list {
+    margin-bottom: 55px;
+}
+.services-item {
+    display: flex;
+    width: 470px;
+    padding: 22px;
+    border-radius: 10px;
+    background: #fff;
+    transition: 0.25s;
+    
+}
+.services-item:hover {
+    position: relative;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+.services-item:hover .services-item__icon {
+    background: #2e80ce;
+    color: #fff;
+}
+.services-item__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background: #eff6fd;
+    border-radius: 50%;
+    transition: 0.25s;
+}
+.services-item__body{
+    margin-left: 19px;
+}
+.services-item__heading {
+    color: #10375C;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.services-item__desc {
+    margin-top: 8px;
+    color: #575F66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
 }
